@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-1" href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                  <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                    Create a New Post
+                </button>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        <a class="dropdown-item" href="#">Privacy & Data</a>
+                        <a class="dropdown-item text-danger" href="#">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="row d-flex">
+  <div class="col">
+    <div class="d-flex justify-content-center">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+              <button class="nav-link active custom-nav-btn" id="pills-home-tab" data-bs-toggle="pill" 
+              data-bs-target="#pills-home" type="button" role="tab" 
+              aria-controls="pills-home" aria-selected="true">
+                  <i class="fa-solid fa-table-cells"></i> 
+              </button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link custom-nav-btn" id="pills-profile-tab" data-bs-toggle="pill" 
+              data-bs-target="#pills-profile" type="button" role="tab" 
+              aria-controls="pills-profile" aria-selected="false">
+                  <i class="fa-solid fa-square"></i> 
+              </button>
+          </li>
+      </ul>
+  </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container mt-4">
+              <div class="card mb-4">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                      <strong>My Delicious Lunch!</strong>
+                      <span>02/14</span>
+                  </div>
+                  <img src="https://comopreparar.pe/wp-content/uploads/2023/11/Untitled-design-38.png" class="card-img-top" alt="Pabellon Criollo">
+                  <div class="card-body">
+                      <p><strong>507 Likes</strong></p>
+                      <p>Pabellón Criollo, considered the national dish of Venezuela, is a hearty plate featuring shredded beef, black beans, white rice, and fried plantains, a combination of flavors and textures that represent Venezuelan culinary heritage. </p>
+                  </div>
+              </div> 
+       
+              <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <strong>Incredible Nature</strong>
+                  <span>03/03</span>
+              </div>
+                  <img src="https://radio.otilca.org/wp-content/uploads/2019/05/araguaney-1-1.jpg" class="card-img-top" alt="Araguaney">
+                  <div class="card-body">
+                      <p><strong>312 Likes</strong></p>
+                      <p>The araguaney (Handroanthus chrysanthus) is the national tree of Venezuela. It's also known as the yellow ipê. </p>
+                  </div>
+              </div>
+      
+              <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <strong>Look at this colorful Bird!</strong>
+                  <span>03/17</span>
+                </div>
+                  <img src="https://www.desdelaplaza.com/wp-content/uploads/2016/05/turpial1.jpg" class="card-img-top" alt="Turpial">
+                  <div class="card-body">
+                  <p><strong>189 Likes</strong></p>
+                  <p>Troupials are the national bird of Venezuela. They are not social birds and defend their territory strongly. Also known as “bugle birds”.</p>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="container">
+            <div class="row g-1">
+
+              <div class="col-4 d-flex justify-content-center">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/e0/9a/39/cayo-de-agua.jpg?w=500&h=500&s=1" class="img-fluid" alt="Post 1">
+              </div>
+    
+                <div class="col-4 d-flex justify-content-center">
+                  <img src="https://beachatlas.s3.us-east-2.amazonaws.com/4f45b09c-18a9-4263-ba46-91a0e56fedf9.jpeg" class="img-fluid" alt="Post 2">
+                </div>
+              
+                <div class="col-4 d-flex justify-content-center">
+                  <img src="https://cheloniacasademar.wordpress.com/wp-content/uploads/2021/02/chelonia-casa-de-mar-c2bfwhat-are-the-best-beaches-in-venezuela-to-visit-in-2021-.jpg" class="img-fluid" alt="Post 3">
+                </div>
+             
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://media.meer.com/attachments/cc92748404c2d6174888d50f65e0b6f97580ceac/store/fill/860/645/92b50d889b8e56c596f71cd6f1a2015d69ceec1dccb77933e13e442cd6cb/Salto-Angel-also-known-as-Kerepakupai-Meru-is-the-worlds-tallest-waterfall-located-in-the.jpg" class="img-fluid" alt="Post 4">
+                </div>
+              
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://www.new7wonders.com/app/uploads/sites/2/2011/04/af.jpg" class="img-fluid" alt="Post 5">
+                </div>
+              
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://cultureroadtravel.com/wp-content/uploads/2023/08/Venezuela-Canaima-National-Park-Angel-Falls-Salto-Angel-009.jpg" class="img-fluid" alt="Post 6">
+                </div>
+              
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://peakvisor.com/photo/SD/pico-bolivar.jpg" class="img-fluid" alt="Post 7">
+                </div>
+              
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://www.mageba-group.com/latam/data/docs/pt/4864/Refsheet-Teleferico-de-Merid-mainimg.webp?variant=75611&v=1.0" class="img-fluid" alt="Post 8">
+                </div>
+              
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0e/7f/a9/c2/laguna-de-mucubaji-magica.jpg" class="img-fluid" alt="Post 9">
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h5 class="modal-title" id="createPostModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body">
+            <form>
+              
+              <div class="mb-3">
+                <label for="postCaption" class="form-label"><strong>Caption:</strong></label>
+                <textarea class="form-control" id="postCaption" rows="3" placeholder="Add the caption of your post here"></textarea>
+              </div>
+    
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-light border"><i class="fa fa-camera"></i></button>
+                <button type="button" class="btn btn-light border"><i class="fa fa-map-marker"></i></button>
+              </div>
+            </form>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
